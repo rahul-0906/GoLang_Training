@@ -28,6 +28,12 @@ func printOperation(capitals map[string]string) {
 	}
 
 	fmt.Println("Map: ", capitals)
+
+	fmt.Println("--------------Display Map---------------------")
+
+	for key, val := range capitals {
+		fmt.Printf("The Capital of %s: is %s\n", key, val)
+	}
 }
 
 func main() {

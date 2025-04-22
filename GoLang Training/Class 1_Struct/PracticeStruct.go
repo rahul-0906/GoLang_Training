@@ -42,5 +42,4 @@ func displayInfo(car Car) {
 }
 func main() {
 	constructStruct()
-
 }

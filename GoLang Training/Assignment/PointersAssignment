@@ -1,0 +1,102 @@
+---
+
+1. Swap Two Numbers Using Pointers
+
+Write a function swap that takes two integer pointers and swaps their values.
+
+func swap(a, b *int)
+
+Test it by swapping two numbers.
+
+
+---
+
+2. Find Maximum Using Pointers
+
+Write a function max that takes two integer pointers and returns the larger number.
+
+func max(a, b *int) int
+
+Test it with some examples.
+
+
+---
+
+3. Update Value Inside a Struct Using Pointer
+
+Create a struct Person with fields Name and Age.
+Write a function that takes a pointer to a Person and updates their age.
+
+type Person struct {
+    Name string
+    Age  int
+}
+
+func updateAge(p *Person, newAge int)
+
+
+---
+
+4. Pointer to an Array
+
+Write a function that takes a pointer to an array of integers and doubles every element in the array.
+
+func doubleElements(arr *[5]int)
+
+
+---
+
+5. Pointer to a Slice
+
+Write a function that takes a pointer to a slice of integers and appends a new element to it.
+
+func appendElement(slice *[]int, value int)
+
+
+---
+
+6. Nil Pointer Check
+
+Write a function that takes a pointer to an integer.
+If the pointer is nil, return -1, otherwise return the value it points to.
+
+func safeValue(p *int) int
+
+
+---
+
+7. Dynamic Memory Allocation
+
+Use new to dynamically create an integer, assign it a value, and print the value.
+
+
+---
+
+8. Chain of Pointers
+
+Create a pointer to a pointer to an integer (**int).
+Assign a value and print it using both one and two levels of dereferencing.
+
+
+---
+
+9. Pointer with Functions Returning Pointers
+
+Write a function that returns a pointer to an integer with a given value.
+
+func createPointer(val int) *int
+
+Example: p := createPointer(10) should give a pointer to 10.
+
+
+---
+
+10. Modify a String via Pointer
+
+Strings are immutable in Go, but you can still modify a slice of bytes.
+Write a function that accepts a pointer to a []byte, and modifies the first character.
+
+func modifyFirstCharacter(b *[]byte)
+
+
+---

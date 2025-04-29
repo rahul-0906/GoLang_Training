@@ -1,0 +1,14 @@
+Struct
+Array
+Slice
+Append
+
+--
+Array Reverse
+String Reverse
+Array Sort
+
+
+--
+Doubts
+Range in Interger for loop

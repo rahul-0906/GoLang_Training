@@ -1,6 +1,6 @@
 ---
 
-1. Swap Two Numbers Using Pointers
+1. Swap Two Numbers Using Pointers - Done
 
 Write a function swap that takes two integer pointers and swaps their values.
 
@@ -11,7 +11,7 @@ Test it by swapping two numbers.
 
 ---
 
-2. Find Maximum Using Pointers
+2. Find Maximum Using Pointers - Done
 
 Write a function max that takes two integer pointers and returns the larger number.
 
@@ -22,7 +22,7 @@ Test it with some examples.
 
 ---
 
-3. Update Value Inside a Struct Using Pointer
+3. Update Value Inside a Struct Using Pointer - Done
 
 Create a struct Person with fields Name and Age.
 Write a function that takes a pointer to a Person and updates their age.
@@ -37,7 +37,7 @@ func updateAge(p *Person, newAge int)
 
 ---
 
-4. Pointer to an Array
+4. Pointer to an Array - Done
 
 Write a function that takes a pointer to an array of integers and doubles every element in the array.
 

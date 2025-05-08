@@ -46,7 +46,7 @@ func doubleElements(arr *[5]int)
 
 ---
 
-5. Pointer to a Slice
+5. Pointer to a Slice - Done
 
 Write a function that takes a pointer to a slice of integers and appends a new element to it.
 

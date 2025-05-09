@@ -55,7 +55,7 @@ func appendElement(slice *[]int, value int)
 
 ---
 
-6. Nil Pointer Check
+6. Nil Pointer Check - Done
 
 Write a function that takes a pointer to an integer.
 If the pointer is nil, return -1, otherwise return the value it points to.
@@ -65,14 +65,14 @@ func safeValue(p *int) int
 
 ---
 
-7. Dynamic Memory Allocation
+7. Dynamic Memory Allocation - Done
 
 Use new to dynamically create an integer, assign it a value, and print the value.
 
 
 ---
 
-8. Chain of Pointers
+8. Chain of Pointers - Done
 
 Create a pointer to a pointer to an integer (**int).
 Assign a value and print it using both one and two levels of dereferencing.
@@ -80,7 +80,7 @@ Assign a value and print it using both one and two levels of dereferencing.
 
 ---
 
-9. Pointer with Functions Returning Pointers
+9. Pointer with Functions Returning Pointers - Done
 
 Write a function that returns a pointer to an integer with a given value.
 
@@ -91,7 +91,7 @@ Example: p := createPointer(10) should give a pointer to 10.
 
 ---
 
-10. Modify a String via Pointer
+10. Modify a String via Pointer - Done
 
 Strings are immutable in Go, but you can still modify a slice of bytes.
 Write a function that accepts a pointer to a []byte, and modifies the first character.

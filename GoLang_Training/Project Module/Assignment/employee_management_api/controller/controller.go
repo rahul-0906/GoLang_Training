@@ -10,7 +10,7 @@ import (
 func CreateEmployee(employee model.Employee) error {
 	//databasepackage.DataBase connection
 	_, err := database.DataBase.Exec("INSERT INTO employee (name,emailid,projectname,location,mobileno) VALUES ($1,$2,$3,$4,$5)",
-		employee.Name, employee.EmailId, employee.ProjectName, employee.ProjectName, employee.Location, employee.MobileNo)
+		employee.Name, employee.EmailId, employee.ProjectName, employee.Location, employee.MobileNo)
 	return err
 }
 

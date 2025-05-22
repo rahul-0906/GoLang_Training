@@ -5,6 +5,7 @@ import (
 	"employee_management_api/database"
 	"employee_management_api/model"
 	"errors"
+	_ "github.com/lib/pq"
 )
 
 func CreateEmployee(employee model.Employee) error {
@@ -39,4 +40,28 @@ func GetEmployeeById(empid int) (model.Employee, error) {
 		return employee, errors.New("User Not Found")
 	}
 	return employee, err
+}
+
+func UpdateEmployee(empid int, employee model.Employee) error {
+	result, err := database.DataBase.Exec("UPDATE employee SET name =$1, emailid = $2, projectname = $3, location = $4, mobileno=$5 WHERE empid=$6", employee.Name, employee.EmailId, employee.ProjectName, employee.Location, employee.MobileNo, empid)
+	if err != nil {
+		return err
+	}
+	count, _ := result.RowsAffected()
+	if count == 0 {
+		return errors.New("Employee Not Found")
+	}
+	return nil
+}
+func DeleteEmployee(empid int) error {
+	result, err := database.DataBase.Exec("DELETE FROM employee WHERE empid=$1", empid)
+	if err != nil {
+		return err
+	}
+	count, _ := result.RowsAffected()
+	if count == 0 {
+		return errors.New("Employee Not Found")
+	}
+	return nil
+
 }

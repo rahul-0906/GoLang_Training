@@ -15,13 +15,18 @@ func OpenDBConnection() {
 	port := "5432"
 	username := "postgres"
 	password := "Arul@123"
-	dbName := "EmployeeDatabase"
+	dbName := "employeeDatabase"
 
 	dsn := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", host, port, username, password, dbName)
 
 	DataBase, err := sql.Open("postgres", dsn)
 	if err != nil {
 		log.Fatal("DataBase Connection Error:", err)
+	}
+
+	err = DataBase.Ping()
+	if err != nil {
+		log.Fatal("Failed to connect to DB:", err)
 	}
 
 	createTable := `CREATE TABLE IF NOT EXISTS employee (

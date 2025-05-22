@@ -12,7 +12,7 @@ func SetupRouter() *gin.Engine {
 	router.POST("/employees", handler.CreateEmployees)
 	router.GET("/employees", handler.GetEmployees)
 	router.GET("/employees/:id", handler.GetEmployee)
-	/*router.PUT("employees/:id", handler.UpdateEmployee)
-	router.DELETE("employees/:id", handler.DeleteEmployee)*/
+	router.PUT("employees/:id", handler.UpdateEmployee)
+	router.DELETE("employees/:id", handler.DeleteEmployee)
 	return router
 }

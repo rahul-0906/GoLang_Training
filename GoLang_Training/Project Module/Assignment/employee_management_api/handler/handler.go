@@ -64,7 +64,7 @@ func UpdateEmployee(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, gin.H{"Message": "Employee Details Updated Successfully"})
 }
 
-func DeleteEmployee(ctx gin.Context) {
+func DeleteEmployee(ctx *gin.Context) {
 	empid, err := strconv.Atoi(ctx.Param("id"))
 	if err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"Error": err.Error()})

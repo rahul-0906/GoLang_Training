@@ -17,7 +17,7 @@ func Connect() {
 	host := "localhost"
 	port := 5432
 	user := "postgres"
-	password := "test"
+	password := "Arul@123"
 	dbname := "task_manager"
 
 	dsn := fmt.Sprintf(

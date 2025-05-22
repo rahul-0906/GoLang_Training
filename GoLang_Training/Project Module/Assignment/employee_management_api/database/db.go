@@ -19,7 +19,7 @@ func OpenDBConnection() {
 
 	dsn := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, username, password, dbName)
 
-	DataBase, err := sql.Open("postgres", dsn)
+	DataBase, err = sql.Open("postgres", dsn)
 	if err != nil {
 		log.Fatal("DataBase Connection Error:", err)
 	}

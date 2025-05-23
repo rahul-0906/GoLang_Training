@@ -37,7 +37,7 @@ func GetEmployeeById(empid int) (model.Employee, error) {
 	row := database.DataBase.QueryRow("SELECT empid,name,emailid,projectname,location,mobileno FROM employee WHERE empid=$1", empid)
 	err := row.Scan(&employee.EmpId, &employee.Name, &employee.EmailId, &employee.ProjectName, &employee.Location, &employee.MobileNo)
 	if err == sql.ErrNoRows {
-		return employee, errors.New("User Not Found")
+		return employee, errors.New("Employee Not Found")
 	}
 	return employee, err
 }
